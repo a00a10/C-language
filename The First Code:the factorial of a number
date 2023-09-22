@@ -1,0 +1,46 @@
+#include<stdio.h>
+
+#include<string.h>
+
+void test01()
+{
+	int i = 0;
+	int l = 0;
+	int a = 1;
+	int n = 0;
+	int m = 0;
+	scanf("%d", &n);
+	for (i = 1; i <= n; i++)
+	{
+		for (l = 1, a = 1; l <= i; l++)
+		{
+			a = a * l;
+		}
+		m = m + a;
+	}
+	printf("%d\n", m);
+}
+
+void test02()
+{
+	int ret = 1;
+	int x = 0;
+	int b = 0;
+	int p = 0;
+	scanf("%d", &b);
+	for (x = 1; x <= b; x++)
+	{
+		ret = ret * x;
+		p = p + ret;
+	}
+	printf("%d\n", p);
+}
+
+int main()
+{
+
+	test02();
+
+	system("pause");
+	return 0;
+}
